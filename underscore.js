@@ -397,9 +397,8 @@ const purchases = [{"month":"February","price":37.85},{"month":"January","price"
 const purchasesByMonth = _.groupBy(purchases, "month")
 console.log(purchasesByMonth)
 // Bonus Points
-const totalByMonth = _.reduce(purchasesByMonth, function(memo, num){return memo + num},0)
+const totalByMonth = _.reduce(purchasesByMonth, (cost+total))
 console.log(totalByMonth)
-
 // memoize
 //  Memoize lets us take a function that takes a lot of time to run.  And memeorize
 //  results for that function, so if we run the function with the same parameters again,
